@@ -1,0 +1,388 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #e8f5e9); /* Softer gradient */
+    color: #333;
+    line-height: 1.6; /* Improved readability */
+    
+
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    max-width: 2400px; /* Reduced width for better readability */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e88e5; /* Brighter blue for a fresh look */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #1976d2; /* Subtle hover effect */
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px; /* Modern typography */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Slightly smaller gap */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded buttons */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff6e7f; /* Modern gradient pink */
+    transform: translateY(-3px); /* Lift on hover */
+}
+
+/* Footer */
+footer {
+    height: 70px;
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+    max-width: 2400px; /* Reduced width for better readability */
+    padding: 20px;
+}
+
+footer a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6e7f;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+/* Left Section: Planets */
+.left-section {
+    width: 25%; /* Keeping width for content spacing */
+    background-color: #f9f9fb; /* Softer background color */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1); /* Lighter shadow for modern look */
+    transition: background-color 0.3s ease;
+    
+}
+
+
+.left-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-section li {
+    font-size: 17px; /* Slightly smaller font for balance */
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners on hover */
+    padding-left: 10px; /* Adding slight padding for spacing */
+}
+
+
+
+.left-section .planet-icon {
+    margin-right: 14px;
+    font-size: 22px;
+    color: #555; /* Softer color for icons */
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+
+
+/* Center Section: Zodiac Wheel */
+.center-section {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Styling specifically for the zodiac wheel element */
+/* Dramatic shadow for the zodiac wheel */
+.center-section svg, .center-section canvas {
+    
+    border-radius: 50%; /* Ensure the shadow is circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+
+
+
+
+/* Right Section: Calendar */
+
+/* Right Section: Calendar */
+.right-section {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Softer, modern shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+   
+}
+
+.right-section:hover {
+    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.2); /* Add depth on hover */
+}
+
+.calendar {
+    width: 100%;
+    max-width: 350px;
+    border: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* Soft card shadow */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.calendar:hover {
+    background-color: #fafafa; /* Subtle background change on hover */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-header button:hover {
+    background-color: #0d47a1;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 600;
+    color: #666;
+}
+
+.calendar-days div {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.calendar-days div:hover {
+    background-color: #ff4081; /* Highlight hover effect */
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Calendar dates grid */
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-dates div {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.calendar-dates div:hover {
+    background-color: #ff4081; /* Pink accent on hover */
+    color: white;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Add depth on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Today date styling */
+.calendar-dates .today {
+    background-color: #1565c0;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Extra highlight */
+}
+
+.calendar-dates .today:hover {
+    background-color: #0d47a1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar {
+        max-width: 100%;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .calendar-days, .calendar-dates {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+input[type="text"]:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 10px rgba(30, 136, 229, 0.2);
+}
+
+/* Hover effects */
+input[type="text"]:hover {
+    border-color: #1976d2;
+}
+
+/* Buttons */
+button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0;
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+/* Default (Light) Theme Styles */
+body {
+    background-color: #f3e5f5; /* Light background */
+    color: #333; /* Dark text */
+    background-image: url('space-6951379_1280.jpg');
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #222; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    background-image: url('https://www.nasa.gov/wp-content/themes/nasa/assets/images/404-bg.jpg');
+}
+
+.dark-theme header {
+    background-color: #6a1b9a; /* Darker purple header */
+}
+
+.dark-theme footer {
+    background-color: #6a1b9a; /* Darker purple footer */
+}
+
+.dark-theme .left-section, .dark-theme .right-section, .dark-theme .center-section {
+    background-color: #444; /* Darker sections */
+    
+}
+
+/* Additional styling for other components can be added similarly */
